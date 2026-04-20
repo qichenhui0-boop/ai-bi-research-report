@@ -556,7 +556,7 @@
 
   <p><span class="timeline-dot"></span><strong>2024年11月</strong>，ThoughtSpot发布了Spotter——一个由四个专业Agent组成的协同系统。Spotter本体负责自然语言分析，SpotterViz负责自动生成最优可视化，SpotterModel负责管理语义模型，SpotterCode负责执行复杂计算。四个Agent各司其职、互相协作，覆盖了从提问到洞察的完整链路。进入2026年，ThoughtSpot密集发布了三个重磅更新：2月的<strong>Analyst Studio</strong>（含SpotCache缓存层和Agentic Data Prep），将分析师工作台从仪表板驱动推向Agent驱动的数据管理；3月12日的<strong>Spotter Semantics</strong>，一个基于知识图谱的Agentic语义层，将业务逻辑、安全规则、指标定义整合为统一的语义基础设施；3月18日的<strong>Spotter for Industries</strong>，面向医疗、零售、金融等9个行业推出预置Agent，试图用行业专有知识弥合通用AI的「上下文鸿沟」——MIT的研究显示95%的组织从AI项目中获取不到任何价值，ThoughtSpot认为根源就在于通用AI缺乏行业特定语境。</p>
   <p><span class="timeline-dot"></span><strong>2024年9月</strong>，Tableau宣布了Tableau Agent——不再只是帮你画图，而是能自主决定该分析什么、怎么分析。Salesforce CEO Marc Benioff在发布会上说了一句话：「The age of the dashboard is over.」仪表板的时代结束了。这话说得有点绝对，但方向是对的。2026年Tableau Next将Agent拆分为三个协同角色：<strong>Data Pro</strong>（数据准备，自动清洗和建模）、<strong>Concierge</strong>（自然语言问答，已于2026年2月正式GA）和<strong>Inspector</strong>（主动监控，预测性预警）。三个Agent不是孤立的聊天机器人，而是能互相传递上下文、并触发下游业务动作——从洞察到行动的闭环。</p>
-  <p>Quick BI也在往Agent化方向走。2025年，Quick BI上线了四大Agent能力：数据问答Agent（自然语言查数据）、数据解读Agent（自动生成数据洞察报告）、数据建模Agent（辅助搭建数据模型）和指标异常Agent（主动监控指标波动并推送预警）。</p>
+  <p>Quick BI也在往Agent化方向走。2025年，Quick BI上线了四大Agent能力：<strong>问数Agent</strong>（自然语言智能问答，自动选择最优方式查数据）、<strong>报告Agent</strong>（自动生成数据分析报告）、<strong>解读Agent</strong>（对关键指标进行深度数据洞察）和<strong>发现Agent</strong>（主动探索数据，发现潜在的业务洞察）。</p>
   <p>衡石科技则提出了一个更尖锐的区分：<strong>ChatBI只是「帮人查数据」，Agentic BI是「替人建数据基建」。</strong>ChatBI本质上还是一个更聪明的搜索框——你问一句，它答一句。但在真实的企业场景中，面对异构数据源、脏数据、复杂模型和精细权限管控，这种简单的一问一答极易出现幻觉与逻辑断裂，形不成完整的工程闭环。真正的Agentic BI把大模型从「自然语言翻译官」升级为「全局调度器」——自主完成数据探查、语义模型固化，根据数据库报错自动重试与自愈，接管整条数据工程流水线。衡石从2016年成立以来专注嵌入式BI场景（将BI能力内嵌进ISV伙伴的SaaS产品），2026年推出HENGSHI CLI，让Agent可以像工程师一样通过命令行操作BI平台的全部能力。</p>
   <p>这个区分非常关键：它意味着<strong>ChatBI是一个功能，不是一个产品</strong>。所有BI厂商都会有ChatBI，就像所有手机都有摄像头一样——有它不是竞争优势，没有才是劣势。真正的竞争在于ChatBI背后的架构深度：语义引擎的厚度、Agent的自主性边界、与企业级管控体系的融合程度。</p>
   <p>与此同时，一批完全不同的物种开始出现——<strong>AI-Native BI</strong>。</p>
@@ -635,7 +635,7 @@
   <p>局限在于跟Google Cloud的深度绑定。多云环境中适用性受限。</p>
 
   <h4>Quick BI 智能小Q</h4>
-  <p>Quick BI在AI BI方面的布局可以用「体系化」来形容。智能小Q是核心的自然语言查询界面，底层采用通义千问 + DeepSeek的双模型架构，官方宣称NL2SQL准确率96.2%。围绕它还有数据解读Agent、指标异常监控和数据建模Agent。</p>
+  <p>Quick BI在AI BI方面的布局可以用「体系化」来形容。核心是<strong>四大Agent能力矩阵</strong>：智能小Q<strong>问数Agent</strong>（自然语言智能问答，底层采用通义千问 + DeepSeek双模型架构，官方宣称NL2SQL准确率96.2%）、<strong>解读Agent</strong>（对关键指标进行深度数据洞察）、<strong>报告Agent</strong>（一键生成数据分析报告）和<strong>发现Agent</strong>（主动探索数据发现潜在业务洞察）。同时配套有<strong>四大Skill</strong>（问数、报表、解读、报告），以及<strong>开放平台13+个API</strong>，形成从自然语言交互到深度集成的完整能力体系。</p>
   <p>独特优势在于跟阿里云数据生态的深度整合。2025年Gartner魔力象限中，阿里云（Quick BI）被列为Challenger——这是中国BI产品在全球最权威分析报告中达到的最高位置。局限是几乎只在阿里云生态内有意义。</p>
 
   <h4>帆软 FineBI</h4>
@@ -734,11 +734,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td><strong>AI核心能力</strong></td><td>NLQ + 报表生成 + 回写</td><td>四Agent + 行业Agent</td><td>NLQ + 语义层驱动</td><td>NLQ + 四大Agent</td><td>Text2DSL</td><td>Threads + Notebook Agent</td></tr>
+        <tr><td><strong>AI核心能力</strong></td><td>NLQ + 报表生成 + 回写</td><td>四Agent + 行业Agent</td><td>NLQ + 语义层驱动</td><td>NLQ + 四大Agent（问数/报告/解读/发现）</td><td>Text2DSL</td><td>Threads + Notebook Agent</td></tr>
         <tr><td><strong>底层AI模型</strong></td><td>GPT-4 (Azure)</td><td>自研+多模型</td><td>Gemini</td><td>通义千问+DeepSeek</td><td>规则引擎+轻量LLM</td><td>多模型 + MCP开放</td></tr>
         <tr><td><strong>语义层</strong></td><td>弱（依赖用户定义）</td><td>强（Spotter Semantics知识图谱）</td><td>强（LookML）</td><td>中（指标体系）</td><td>强（DSL定义）</td><td>中（Context Studio）</td></tr>
         <tr><td><strong>NL2SQL准确率</strong></td><td>中等</td><td>中高</td><td>高（语义层加持）</td><td>高（官方称96.2%）</td><td>高（DSL受控）</td><td>中高（上下文增强）</td></tr>
-        <tr><td><strong>Agent化程度</strong></td><td>低（Copilot为主）</td><td>高（四Agent体系）</td><td>中</td><td>中高</td><td>低</td><td>高（Agentic分析）</td></tr>
+<td>中高（四大Agent + 四大Skill + 13+ API）</td>
         <tr><td><strong>企业治理</strong></td><td>强（Microsoft Purview）</td><td>强（企业级）</td><td>中（Google Cloud IAM）</td><td>中（阿里云RAM）</td><td>强（本地部署）</td><td>中高（SOC2+HIPAA+SSO）</td></tr>
         <tr><td><strong>生态绑定</strong></td><td>Microsoft全家桶</td><td>独立</td><td>Google Cloud</td><td>阿里云</td><td>独立</td><td>独立 + MCP开放</td></tr>
         <tr><td><strong>核心客群</strong></td><td>全行业</td><td>北美中大型企业</td><td>Google Cloud客户</td><td>阿里云客户</td><td>中国传统行业</td><td>中大型企业数据团队</td></tr>
